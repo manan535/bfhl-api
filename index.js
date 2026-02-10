@@ -11,6 +11,11 @@ app.use(cors());
 app.use(express.json());
 
 // Helper Functions
+
+app.get('/', (req, res) => {
+    res.send('BFHL API is running');
+});
+
 const getFibonacci = (n) => {
     if (typeof n !== 'number' || n < 0) return null; // Invalid input handling
     if (n === 0) return [];
@@ -193,3 +198,4 @@ app.get('/health', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
