@@ -3,9 +3,26 @@
 ## Description
 This is a REST API with `POST /bfhl` and `GET /health` endpoints built using Node.js and Express.
 
-## Setup
+## Deployment on Render.com
+
+1.  Push this code to a public GitHub repository. (Do not upload `.env` or `node_modules`).
+2.  Log in to [Render.com](https://render.com).
+3.  Click **New +** -> **Web Service**.
+4.  Connect your GitHub repository.
+5.  **Configuration**:
+    *   **Runtime**: Node
+    *   **Build Command**: `npm install`
+    *   **Start Command**: `npm start`
+6.  **Environment Variables** (Important):
+    *   Scroll down to the "Environment Variables" section.
+    *   Add Key: `EMAIL` Value: `manan2058.be23@chitkara.edu.in`
+    *   Add Key: `GEMINI_API_KEY` Value: `(Your AI Key)`
+7.  Click **Create Web Service**.
+
+## Setup Locally
 
 1.  Clone the repository.
+
 2.  Install dependencies:
     ```bash
     npm install
